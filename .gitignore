@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Fonts folder
+/fonts
+.vscode/
+.DS_Store
+/images

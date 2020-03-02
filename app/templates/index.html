@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Welcome to TextPoster!</h1>
+            <p>Textposter is a simple tool for generating images with text to post on Instagram</p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-sm">
+            <form action="{{ url_for('result') }}" method="post">
+                <div class="form-group">
+                    <label for="bgFile">Example file input</label>
+                    
+                    <input type="file" class="form-control-file" id="bgFile">
+                </div>
+                <div class=form-group>
+                    <label for="bgColor">Font color</label>
+                    
+                    <input type="color" class="form-control" id="bgColor" value="#ff0000">
+                </div>
+                <div class=form-group>
+                    <label for="fonts">Choose a font:</label>
+
+                    <select id="fonts" class="form-control">
+                        <option value="1">Bellarina</option>
+                        <option value="2">LemonMilk</option>
+                        <option value="3">orbitron-medium</option>
+                        <option value="4">Provicali</option>
+                    </select> 
+                </div>
+                <div class=form-group>
+                        <label for="textInput">Put text here</label>
+                        <input type="email" class="form-control" id="textInput" placeholder="" aria-describedby="inputHelp">
+                        <small id="inputHelp" class="form-text text-muted">This text will be place in the image</small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
