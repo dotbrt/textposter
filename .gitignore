@@ -132,4 +132,5 @@ dmypy.json
 /fonts
 .vscode/
 .DS_Store
-/images
+app/images
+app/__pycache__
